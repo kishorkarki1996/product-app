@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ThemeSwitch from "./theme-switch";
+import ProductCard from "@/components/product-card";
+import { PiAlarmDuotone } from "react-icons/pi";
 
 type Product = {
   id: number;
@@ -43,8 +45,8 @@ export default function Page() {
 
   return (
     <div>
-      <h2>Purpose</h2>
-      <ThemeSwitch/>
+      <ProductCard />
+      {/* <h2>Purpose</h2>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
@@ -61,7 +63,10 @@ export default function Page() {
             </p>
           </div>
         ))
-      )}
+      )} */}
+
+
+<PiAlarmDuotone className="size-20 text-red-500"/>
     </div>
   );
 }
