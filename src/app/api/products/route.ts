@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     // Make sure the request is successful
-    const response = await fetch("http://localhost:3001/products"); // Fetch from JSON Server
+    const response = await fetch("http://localhost:3009/products"); // Fetch from JSON Server
 
     // Check if the response is OK (status code 200-299)
     if (!response.ok) {
